@@ -16,15 +16,19 @@ const App = () => {
         {/* Do not remove the main div */}
         <h1>Search item</h1>
         <input placeholder="search" value={Data} onChange={handleChande}></input>
+        <ul>
         {
           filteredFruits.map(item=>{
             return(
-              <ul>
+              
+
                 <li>{item}</li>
-              </ul>
+                
+              
             )
           })
         }
+        </ul>
     </div>
   )
 }
